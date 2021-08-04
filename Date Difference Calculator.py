@@ -43,7 +43,7 @@ class Application(Frame):
             except ValueError:
                 output = 'Date format invalid!'
         else:
-                output = 'Date Not complete yet!'
+            output = 'Date Not complete yet!'
 
         self.textentry.delete(0.0, END)
         self.textentry.insert(0.0, output)
