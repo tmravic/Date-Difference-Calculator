@@ -7,7 +7,7 @@ from tkinter import Frame, Text, Button, Tk, END
 
 class Application(Frame):
     def __init__(self, master):
-        """This initializes the frame"""
+        '''Initial setup handled here'''
         super().__init__(master)
         self.grid()
         self.create_features()
@@ -34,6 +34,7 @@ class Application(Frame):
 
 
     def date_difference(self):
+        '''Method that subtracts the start date from the end date'''
         if self.date1 and self.date2:
             try:
                 start_date = dt.strptime(self.dates['date1'], '%Y-%m-%d')
